@@ -1,2 +1,8 @@
 @import './colors.css';
 @import './typography.css';
+@import './page.css';
+@import './menu.css';
+
+body {
+  margin: 0;
+}
