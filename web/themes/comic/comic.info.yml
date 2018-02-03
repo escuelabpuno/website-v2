@@ -1,0 +1,22 @@
+name: Comic
+type: theme
+description: A beutiful theme for Escuelab web site.
+package: Beauty site
+version: VERSION
+core: 8.x
+base theme: false
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  highlighted: Highlighted
+  help: Help
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+
+libraries:
+  - comic/base
