@@ -8,6 +8,7 @@ base theme: false
 
 regions:
   header: Header
+  navigation: Navigation
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   highlighted: Highlighted
