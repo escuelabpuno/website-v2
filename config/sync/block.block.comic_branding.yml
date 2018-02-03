@@ -1,0 +1,25 @@
+uuid: de4f646b-c160-4490-b146-449c10fa6b27
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - comic
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: comic_branding
+theme: comic
+region: navigation
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 1bca7df1-7a33-460d-87b1-147d343c9e27
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - comic
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: comic_breadcrumbs
+theme: comic
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
