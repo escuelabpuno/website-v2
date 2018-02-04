@@ -1,5 +1,5 @@
 .main-navigation {
-  outline: 1px solid red;
+  outline: 1px dashed gray;
   display: flex;
   justify-content: space-between;
 }
