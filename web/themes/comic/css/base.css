@@ -2,6 +2,7 @@
 @import './typography.css';
 @import './page.css';
 @import './menu.css';
+@import './event-slider.css';
 
 body {
   margin: 0;

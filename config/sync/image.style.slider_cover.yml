@@ -1,0 +1,14 @@
+uuid: 87af6566-33f9-475c-9836-39e736575237
+langcode: en
+status: true
+dependencies: {  }
+name: slider_cover
+label: 'Slider cover (1142x470)'
+effects:
+  77f06e2b-0654-4db3-9779-cc737e689417:
+    uuid: 77f06e2b-0654-4db3-9779-cc737e689417
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1142
+      height: 470

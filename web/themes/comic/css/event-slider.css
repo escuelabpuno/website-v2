@@ -1,0 +1,27 @@
+.event-slider {
+  width: 1142px;
+  outline: 1px solid red;
+  margin: 0 auto;
+}
+
+
+.event-slider__box {
+  background-color: var(--green);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 380px;
+  height: 355px;
+  padding: 3.25rem;
+  top: 55px;
+}
+
+.event-slider__title {
+  text-align: center;
+}
+
+.event-slider__title a {
+  color: var(--white);
+  font-family: var(--second-font-family);
+  text-decoration: none;
+}
