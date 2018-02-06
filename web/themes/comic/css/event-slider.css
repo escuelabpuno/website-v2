@@ -14,14 +14,31 @@
   height: 355px;
   padding: 3.25rem;
   top: 55px;
+  text-align: center;
 }
 
 .event-slider__title {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .event-slider__title a {
   color: var(--white);
   font-family: var(--second-font-family);
   text-decoration: none;
+}
+
+.event-slider__link {
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  display: inline-block;
+  font-size: .8rem;
+  line-height: 25px;
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+.event-slider__link .fab {
 }

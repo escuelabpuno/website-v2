@@ -78,9 +78,10 @@
 <article{{ attributes.addClass(eventClasses) }}>
   <div class="event-slider__box">
     <h2{{ title_attributes.addClass(titleClasses) }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
 
+    <a href="{{ url }}" rel="bookmark" class="event-slider__link"><i class="fab fa-cloudsmith"></i></a>
   </div>
 
   {% if display_submitted %}
