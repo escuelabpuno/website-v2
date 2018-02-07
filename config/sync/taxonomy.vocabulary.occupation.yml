@@ -1,0 +1,9 @@
+uuid: 0af4d835-ff22-4ddf-8feb-8a54677a8717
+langcode: en
+status: true
+dependencies: {  }
+name: Occupation
+vid: occupation
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,29 @@
+uuid: ad5d6cca-ec0b-45f7-a076-229526f507b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_occupations
+    - profile.type.editor
+    - taxonomy.vocabulary.occupation
+id: profile.editor.field_occupations
+field_name: field_occupations
+entity_type: profile
+bundle: editor
+label: Occupations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      occupation: occupation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

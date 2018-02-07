@@ -1,0 +1,14 @@
+uuid: e54779cf-5938-4113-9e7f-78b8707ca4ed
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+registration: true
+multiple: false
+roles:
+  authenticated: authenticated
+  administrator: '0'
+weight: 0
+use_revisions: false
+description: ''
