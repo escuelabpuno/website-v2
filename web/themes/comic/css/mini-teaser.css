@@ -1,0 +1,34 @@
+.recent-story {
+  background-color: var(--black-100);
+  outline: 1px solid red;
+  display: flex;
+  border-bottom: .5px dashed #e8e8e8;
+  padding: 1rem 0;
+}
+
+.recent-story__content {
+  margin-left: 1.2rem;
+}
+
+.recent-story__title {
+  font-family: var(--second-font-family);
+  font-size: 1rem;
+  margin: 0;
+  position: relative;
+  top: 6px;
+}
+
+.recent-story__content a {
+  color: var(--black-600);
+  text-decoration: none;
+}
+
+.recent-story__date {
+  margin-top: .5rem;
+}
+
+.recent-story__date span {
+  color: var(--black-500);
+  font-family: var(--third-font-family);
+  font-size: var(--font-size-small);
+}

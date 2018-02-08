@@ -3,3 +3,23 @@
   display: flex;
   justify-content: space-between;
 }
+
+.content {
+  outline: 1px solid blue;
+  display: flex;
+  width: 1172px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.layout-content {
+  outline: 1px solid blue;
+  flex-shrink: 0;
+  width: 67.5%;
+}
+
+.layout-sidebar-first {
+  outline: 1px solid red;
+  flex-shrink: 0;
+  width: 30%;
+}

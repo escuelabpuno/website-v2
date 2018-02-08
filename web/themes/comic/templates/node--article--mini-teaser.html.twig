@@ -72,30 +72,28 @@
  * @ingroup themeable
  */
 #}
-{% set eventClasses = ['event-slider'] %}
-{% set titleClasses = ['event-slider__title'] %}
 
-<article{{ attributes.addClass(eventClasses) }}>
-  <div class="event-slider__box">
-    <h2{{ title_attributes.addClass(titleClasses) }}>
-    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+{% set classes = ['recent-story'] %}
+{% set titleClasses = ['recent-story__title'] %}
+{% set dateClasses = ['recent-story__date'] %}
 
-    <!-- <a href="{{ url }}" rel="bookmark" class="event-slider__link"><i class="fab fa-cloudsmith"></i></a> -->
+<article{{ attributes.addClass(classes) }}>
+  <div class="">
+    {{ content.field_image }}
   </div>
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+  <div class="recent-story__content">
+    <div{{ author_attributes.addClass(dateClasses) }}>
+      {{ date }}
+    </div>
+
+    <h2{{ title_attributes.addClass(titleClasses) }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  </div>
 
   <div{{ content_attributes }}>
-    {{ content }}
+    {{ content|without("field_image") }}
   </div>
 
 </article>

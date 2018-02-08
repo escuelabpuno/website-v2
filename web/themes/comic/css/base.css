@@ -3,6 +3,8 @@
 @import './page.css';
 @import './menu.css';
 @import './event-slider.css';
+@import './mini-teaser.css';
+@import './title-block.css';
 
 body {
   margin: 0;
