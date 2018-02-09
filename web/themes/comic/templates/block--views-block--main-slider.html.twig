@@ -27,14 +27,13 @@
  * @ingroup themeable
  */
 #}
-{% set classes = ['block-views'] %}
-{% set titleClasses = ['block-views__title'] %}
-
-<div {{ attributes.addClass(classes) }}>
-  <h2{{ title_attributes.addClass(titleClasses) }}>{{ label }}</h2>
-  <div class="block-views__content">
-    {% block content %}
-      {{ content|without("field_title") }}
-    {% endblock %}
-  </div>
+<div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
 </div>
