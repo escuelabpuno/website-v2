@@ -1,0 +1,30 @@
+uuid: e0bd0748-47f7-4731-b162-cd0be81cebbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_stories
+  module:
+    - system
+    - views
+  theme:
+    - comic
+id: views_block__recent_stories_recent_stories_view
+theme: comic
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:recent_stories-recent_stories_view'
+settings:
+  id: 'views_block:recent_stories-recent_stories_view'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

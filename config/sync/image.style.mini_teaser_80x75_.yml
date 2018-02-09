@@ -1,0 +1,14 @@
+uuid: b5d5a296-fb0e-4a46-9637-2bb4e97357b5
+langcode: en
+status: true
+dependencies: {  }
+name: mini_teaser_80x75_
+label: 'Mini teaser (80x75)'
+effects:
+  d820be57-d55b-4102-99f8-51659170c187:
+    uuid: d820be57-d55b-4102-99f8-51659170c187
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 75
