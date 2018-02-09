@@ -1,13 +1,14 @@
 .recent-story {
-  background-color: var(--black-100);
-  outline: 1px solid red;
   display: flex;
-  border-bottom: .5px dashed #e8e8e8;
-  padding: 1rem 0;
+  margin: 1rem 0;
 }
 
 .recent-story__content {
   margin-left: 1.2rem;
+}
+
+.recent-story__img img {
+  border-radius: 3px;
 }
 
 .recent-story__title {

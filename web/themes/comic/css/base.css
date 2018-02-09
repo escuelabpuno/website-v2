@@ -4,7 +4,7 @@
 @import './menu.css';
 @import './event-slider.css';
 @import './mini-teaser.css';
-@import './title-block.css';
+@import './block-view.css';
 
 body {
   margin: 0;

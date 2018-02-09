@@ -77,13 +77,13 @@
 {% set titleClasses = ['recent-story__title'] %}
 {% set dateClasses = ['recent-story__date'] %}
 
-<article{{ attributes.addClass(classes) }}>
-  <div class="">
+<article {{ attributes.addClass(classes) }}>
+  <div class="recent-story__img">
     {{ content.field_image }}
   </div>
 
   <div class="recent-story__content">
-    <div{{ author_attributes.addClass(dateClasses) }}>
+    <div {{ author_attributes.addClass(dateClasses) }}>
       {{ date }}
     </div>
 
@@ -91,9 +91,7 @@
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
   </div>
-
-  <div{{ content_attributes }}>
+  <div {{ content_attributes }}>
     {{ content|without("field_image") }}
   </div>
-
 </article>
