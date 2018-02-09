@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - core.entity_view_mode.node.slider
+    - core.entity_view_mode.node.teaser
   module:
     - node
     - user
@@ -196,7 +196,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: slider
+          view_mode: teaser
       sorts:
         sticky:
           admin_label: ''
