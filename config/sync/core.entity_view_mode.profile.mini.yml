@@ -1,0 +1,12 @@
+uuid: b205529f-4b22-4f80-8bde-bb138eaa7426
+langcode: en
+status: false
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: 1wdZ5AuNjbNXgiazDols5p2YMD_FLQwCiwoesFs3Jog
+id: profile.mini
+label: Mini
+targetEntityType: profile
+cache: true

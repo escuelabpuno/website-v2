@@ -1,0 +1,37 @@
+uuid: 39dfc12a-ca70-47c8-8a8c-0eed3860baf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.mini
+    - field.field.profile.editor.field_full_name
+    - field.field.profile.editor.field_occupations
+    - field.field.profile.editor.field_photo
+    - image.style.mini_profile
+    - profile.type.editor
+  module:
+    - image
+id: profile.editor.mini
+targetEntityType: profile
+bundle: editor
+mode: mini
+content:
+  field_full_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mini_profile
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_occupations: true

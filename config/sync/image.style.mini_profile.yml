@@ -1,0 +1,14 @@
+uuid: 8801eb4b-5553-4210-a419-de5c724b3159
+langcode: en
+status: true
+dependencies: {  }
+name: mini_profile
+label: 'Mini profile (60x60)'
+effects:
+  01710086-c081-4b0e-8853-7cf1ab6ffc97:
+    uuid: 01710086-c081-4b0e-8853-7cf1ab6ffc97
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60
