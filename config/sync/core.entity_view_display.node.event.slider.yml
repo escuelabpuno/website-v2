@@ -13,7 +13,6 @@ dependencies:
     - image.style.slider_cover
     - node.type.event
   module:
-    - datetime
     - image
     - user
 id: node.event.slider
@@ -30,34 +29,18 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_ends:
-    weight: 2
-    label: hidden
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_profile:
     type: entity_reference_entity_view
-    weight: 3
-    region: content
-    label: hidden
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-  field_starts:
     weight: 1
+    region: content
     label: hidden
     settings:
-      format_type: medium
-      timezone_override: ''
+      view_mode: mini
+      link: false
     third_party_settings: {  }
-    type: datetime_default
-    region: content
 hidden:
   body: true
+  field_ends: true
   field_location: true
+  field_starts: true
   links: true
