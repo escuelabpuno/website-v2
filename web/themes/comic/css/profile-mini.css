@@ -1,0 +1,15 @@
+.profile-editor {
+  /*outline: 1px solid yellow;*/
+}
+
+.profile-editor__photo img {
+  /*outline: 1px solid blue;*/
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-editor__fullname {
+  color: var(--white);
+  font-family: var(--third-font-family);
+  font-size: .85rem;
+}

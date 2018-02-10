@@ -1,0 +1,9 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - profile
+id: profile.compact
+label: 'Compact'
+targetEntityType: profile
+cache: true

@@ -1,0 +1,6 @@
+name: Escuelab core
+type: module
+package: Escuelab
+core: 8.x
+dependencies:
+  - profile
