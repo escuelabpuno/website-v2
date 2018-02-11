@@ -1,9 +1,7 @@
 .event-slider {
-  width: 1172px;
-  outline: 1px solid red;
-  margin: 0 auto;
+  outline: 1px solid blue;
+  position: relative;
 }
-
 
 .event-slider__box {
   background-color: var(--green);
