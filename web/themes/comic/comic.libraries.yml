@@ -13,3 +13,18 @@ font-awesome:
       type: external
       attributes:
         defer: true
+
+slick:
+  css:
+    theme:
+      node_modules/slick-carousel/slick/slick.css: {}
+      node_modules/slick-carousel/slick/slick-theme.css: {}
+  js:
+    node_modules/slick-carousel/slick/slick.js: {}
+
+slider:
+  js:
+    js/slider.js: {}
+
+  dependencies:
+    - comic/slick
