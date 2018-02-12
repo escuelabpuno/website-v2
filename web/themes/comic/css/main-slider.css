@@ -1,13 +1,10 @@
 .main-slider {
-  outline: 4px dashed green;
-
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
   width: 1172px;
 }
 
 .main-slider .slick-arrow,
 .main-slider .slick-arrow:hover {
-  outline: 2px dashed blue;
   color: var(--white);
   width: 40px;
   height: 40px;
@@ -18,7 +15,8 @@
 }
 
 .main-slider .slick-prev,
-.main-slider .slick-prev:hover {
+.main-slider .slick-prev:hover,
+.main-slider .slick-prev:focus {
   background-color: var(--black-900);
   right: 85px;
   left: inherit; /* reset left value. */
@@ -31,7 +29,8 @@
 }
 
 .main-slider > .slick-next,
-.main-slider > .slick-next:hover {
+.main-slider > .slick-next:hover,
+.main-slider > .slick-next:focus {
   background-color: var(--green);
   right: 40px;
 }
