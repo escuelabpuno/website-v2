@@ -1,0 +1,24 @@
+<?php
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function escuelab_core_entity_presave(EntityInterface $entity) {
+
+  // Validate if it is a newer event node entity bundle to fil profile field using the owner for it.
+  if ($entity->isNew() && $entity->getEntityTypeId() === 'node' && $entity->bundle() === 'event') {
+
+    $profiles = \Drupal::entityTypeManager()->getStorage('profile')
+      ->loadByProperties([
+        'uid' => $entity->getOwner()->id(),
+        'type' => 'editor'
+      ]);
+
+    // Get the first profile only.
+    $profile = reset($profiles);
+
+    // Fil the profile field with the user profile id.
+    $entity->set('field_profile', $profile->id());
+  }
+}
