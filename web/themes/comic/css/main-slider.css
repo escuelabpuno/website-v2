@@ -5,7 +5,8 @@
   width: 1172px;
 }
 
-.main-slider .slick-arrow {
+.main-slider .slick-arrow,
+.main-slider .slick-arrow:hover {
   outline: 2px dashed blue;
   color: var(--white);
   width: 40px;
@@ -16,9 +17,12 @@
   top: 50px;
 }
 
-.main-slider .slick-prev {
+.main-slider .slick-prev,
+.main-slider .slick-prev:hover {
   background-color: var(--black-900);
-  right: 150px;
+  right: 85px;
+  left: inherit; /* reset left value. */
+  z-index: 1;
 }
 
 .main-slider .slick-prev::before {
@@ -26,8 +30,10 @@
   content: "‹";
 }
 
-.main-slider .slick-next {
+.main-slider > .slick-next,
+.main-slider > .slick-next:hover {
   background-color: var(--green);
+  right: 40px;
 }
 
 .main-slider .slick-next::before {
