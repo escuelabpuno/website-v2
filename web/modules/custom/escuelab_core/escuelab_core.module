@@ -22,3 +22,14 @@ function escuelab_core_entity_presave(EntityInterface $entity) {
     $entity->set('field_profile', $profile->id());
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function escuelab_core_form_alter(&$form, &$form_state, $form_id) {
+
+  // Move the profile field to right sidebar in the node event forms.
+  if ($form_id === 'node_event_form' || $form_id == 'node_event_edit_form') {
+    $form['field_profile']['#group'] = 'author';
+  }
+}
