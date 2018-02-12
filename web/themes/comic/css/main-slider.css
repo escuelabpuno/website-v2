@@ -4,3 +4,33 @@
   margin: 0 auto;
   width: 1172px;
 }
+
+.main-slider .slick-arrow {
+  outline: 2px dashed blue;
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.main-slider .slick-prev {
+  background-color: var(--black-900);
+  right: 150px;
+}
+
+.main-slider .slick-prev::before {
+  font-size: 23px;
+  content: "‹";
+}
+
+.main-slider .slick-next {
+  background-color: var(--green);
+}
+
+.main-slider .slick-next::before {
+  font-size: 23px;
+  content: "›";
+}

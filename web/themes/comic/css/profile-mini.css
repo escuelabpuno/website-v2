@@ -1,11 +1,13 @@
 .profile-editor {
   /*outline: 1px solid yellow;*/
+  text-align: center;
 }
 
 .profile-editor__photo img {
   /*outline: 1px solid blue;*/
   border-radius: 50%;
   margin-bottom: 1rem;
+  display: inline-block !important;
 }
 
 .profile-editor__fullname {
