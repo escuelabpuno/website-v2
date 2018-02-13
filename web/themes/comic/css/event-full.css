@@ -1,0 +1,55 @@
+.event-full {
+  outline: 2px solid green;
+  margin: 0 auto;
+  width: 970px;
+}
+
+.event-full__cover {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.event-full__date {
+  background-color: var(--green);
+  border-radius: 5px;
+  color: var(--white);
+  width: 82px;
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  padding: 19px 0;
+  left: 4.3rem;
+  position: absolute;
+  bottom: -35px;
+}
+
+.event-full__date__month {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.event-full__date__day-year {
+  font-size: .8rem;
+}
+
+.event-full__container {
+  padding: 0 4.3rem;
+}
+
+.event-full__title {
+  font-family: var(--second-font-family);
+  font-size: 2rem;
+}
+
+.event-full__title a {
+  text-decoration: none;
+  color: var(--black-600);
+}
+
+.event-full__content {
+  color: var(--black-400);
+  text-align: justify;
+  font-family: var(--third-font-family);
+  line-height: 27px;
+  font-size: 15px;
+}
