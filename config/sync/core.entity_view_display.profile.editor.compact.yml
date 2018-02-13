@@ -7,6 +7,7 @@ dependencies:
     - field.field.profile.editor.field_full_name
     - field.field.profile.editor.field_occupations
     - field.field.profile.editor.field_photo
+    - field.field.profile.editor.field_summary
     - image.style.compact_profile
     - profile.type.editor
   module:
@@ -25,7 +26,7 @@ content:
     type: string
     region: content
   field_occupations:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       link: true
@@ -41,4 +42,11 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_summary:
+    type: basic_string
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
