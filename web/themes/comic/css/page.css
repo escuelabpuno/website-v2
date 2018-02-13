@@ -25,7 +25,9 @@
 }
 
 
-/* Page node styles */
+/*
+ * Page node styles.
+ */
 .page-node {
   outline: 2px dashed red;
 }
@@ -34,4 +36,5 @@
   outline: 2px dotted blue;
   width: var(--large);
   margin: 0 auto;
+  padding-bottom: 3rem;
 }

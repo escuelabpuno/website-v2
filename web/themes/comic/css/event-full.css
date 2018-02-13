@@ -1,5 +1,4 @@
 .event-full {
-  outline: 2px solid green;
   margin: 0 auto;
   width: 970px;
 }
@@ -48,8 +47,15 @@
 
 .event-full__content {
   color: var(--black-400);
-  text-align: justify;
   font-family: var(--third-font-family);
-  line-height: 27px;
   font-size: 15px;
+  line-height: 27px;
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+.event-full__profile {
+  padding: 3rem 3.4rem;
+  border-top: 1px dashed var(--black-400);
+  border-bottom: 1px dashed var(--black-400);
 }

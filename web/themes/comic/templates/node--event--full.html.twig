@@ -96,10 +96,13 @@
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
     <div {{ content_attributes.addClass(contentClasses) }}>
-      {{ content|without('field_cover') }}
+      {{ content|without('field_cover')|without('field_profile') }}
     </div>
   </div>
 
+  <div class="event-full__profile">
+    {{ content.field_profile }}
+  </div>
 
 
 </article>
