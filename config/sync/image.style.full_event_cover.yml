@@ -1,0 +1,14 @@
+uuid: b77dc15a-38c9-4daf-9a9c-7dddfecdf670
+langcode: en
+status: true
+dependencies: {  }
+name: full_event_cover
+label: 'Full event cover (970x422)'
+effects:
+  d501b45a-0929-4630-a347-5f74f55f1533:
+    uuid: d501b45a-0929-4630-a347-5f74f55f1533
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 970
+      height: 422
