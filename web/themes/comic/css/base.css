@@ -7,7 +7,9 @@
 
 @import './mini-teaser.css';
 @import './block-view.css';
+
 @import './profile-mini.css';
+@import './profile-compact.css';
 
 @import './event-slider.css';
 @import './main-slider.css';
