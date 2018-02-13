@@ -1,3 +1,16 @@
 .profile-compact {
   outline: 2px double red;
+  display: flex;
+}
+
+.profile-compact__photo {
+  outline: 2px dotted blue;
+}
+
+.profile-compact__photo img {
+  border-radius: 50%;
+}
+
+.profile-compact__container {
+  outline: 2px dotted orange;
 }

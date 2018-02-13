@@ -22,5 +22,20 @@
 {% set classes = ['profile-compact'] %}
 
 <div {{ attributes.addClass(classes) }}>
-  {{ content }}
+  <div class="profile-compact__photo">
+    {{ content.field_photo }}
+  </div>
+  <div class="profile-compact__container">
+    <div class="profile-compact__ocupations">
+      {{ content.field_occupations }}
+    </div>
+
+    <div class="profile-compact__fullname">
+      {{ content.field_full_name }}
+    </div>
+
+    <div class="profile-compact__summary">
+      {{ content.field_summary }}
+    </div>
+  </div>
 </div>
