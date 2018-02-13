@@ -1,5 +1,7 @@
 @import './colors.css';
 @import './typography.css';
+@import './media.css';
+
 @import './page.css';
 @import './menu.css';
 
@@ -9,6 +11,7 @@
 
 @import './event-slider.css';
 @import './main-slider.css';
+@import './event-full.css';
 
 body {
   margin: 0;
