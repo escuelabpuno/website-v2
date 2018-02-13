@@ -1,0 +1,14 @@
+uuid: b07976d1-3dac-42a7-be2a-e4fb88b9f0bf
+langcode: en
+status: true
+dependencies: {  }
+name: compact_profile
+label: 'Compact profile (185x185)'
+effects:
+  38a15a3b-ec79-4f53-be13-1b7551895f56:
+    uuid: 38a15a3b-ec79-4f53-be13-1b7551895f56
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 185
+      height: 185

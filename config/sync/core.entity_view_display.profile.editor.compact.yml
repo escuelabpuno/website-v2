@@ -1,0 +1,44 @@
+uuid: a7dbc935-e1ba-4ff0-9303-5f14981bde60
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.compact
+    - field.field.profile.editor.field_full_name
+    - field.field.profile.editor.field_occupations
+    - field.field.profile.editor.field_photo
+    - image.style.compact_profile
+    - profile.type.editor
+  module:
+    - image
+id: profile.editor.compact
+targetEntityType: profile
+bundle: editor
+mode: compact
+content:
+  field_full_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_occupations:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: compact_profile
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }
