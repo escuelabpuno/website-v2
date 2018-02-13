@@ -1,0 +1,19 @@
+uuid: 8a9a42bd-e176-44cf-b327-e3042be323de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_summary
+    - profile.type.editor
+id: profile.editor.field_summary
+field_name: field_summary
+entity_type: profile
+bundle: editor
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

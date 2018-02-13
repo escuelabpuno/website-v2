@@ -6,6 +6,7 @@ dependencies:
     - field.field.profile.editor.field_full_name
     - field.field.profile.editor.field_occupations
     - field.field.profile.editor.field_photo
+    - field.field.profile.editor.field_summary
     - image.style.thumbnail
     - profile.type.editor
   module:
@@ -36,5 +37,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_summary:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
 hidden: {  }
