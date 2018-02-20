@@ -31,7 +31,13 @@
 {% set titleClasses = ['block-views__title'] %}
 
 <div {{ attributes.addClass(classes) }}>
-  <h2{{ title_attributes.addClass(titleClasses) }}>{{ label }}</h2>
+
+  {% if label %}
+    <h2{{ title_attributes.addClass(titleClasses) }}>
+      {{ label }}
+    </h2>
+  {% endif %}
+
   <div class="block-views__content">
     {% block content %}
       {{ content|without("field_title") }}

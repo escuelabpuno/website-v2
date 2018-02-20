@@ -1,0 +1,11 @@
+.article-list__rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -30px;
+}
+
+.article-list__rows .views-row {
+  margin-bottom: 2rem;
+  width: 31.5%;
+}
