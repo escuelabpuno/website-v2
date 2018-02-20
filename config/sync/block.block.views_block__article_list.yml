@@ -1,0 +1,30 @@
+uuid: 5342d2eb-fc08-4939-a877-acf1cbd414dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.article_list
+  module:
+    - system
+    - views
+  theme:
+    - comic
+id: views_block__article_list
+theme: comic
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:article_list-block_1'
+settings:
+  id: 'views_block:article_list-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

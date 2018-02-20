@@ -1,0 +1,14 @@
+uuid: 11a0e11b-4645-4fc4-985b-deaf4a12ee00
+langcode: en
+status: true
+dependencies: {  }
+name: article_image
+label: 'Article image (370x420)'
+effects:
+  7b13af7a-9dfe-403f-86f5-0ca9c258900f:
+    uuid: 7b13af7a-9dfe-403f-86f5-0ca9c258900f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 380
+      height: 420
