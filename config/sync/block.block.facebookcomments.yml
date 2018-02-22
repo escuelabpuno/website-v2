@@ -1,0 +1,32 @@
+uuid: 64381804-99cd-4593-b6a3-561b08974a8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - facebook_comments
+    - node
+  theme:
+    - comic
+id: facebookcomments
+theme: comic
+region: footer_content
+weight: -9
+provider: null
+plugin: facebook_comments
+settings:
+  id: facebook_comments
+  label: 'Article comments'
+  provider: facebook_comments
+  label_display: visible
+  facebook_comments_style: light
+  facebook_comments_width: '208'
+  facebook_comments_width_fluid: 1
+  facebook_comments_amount: '5'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

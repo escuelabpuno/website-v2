@@ -15,6 +15,7 @@ regions:
   help: Help
   breadcrumb: Breadcrumb
   content: Content
+  footer_content: 'Footer content'
   sidebar_first: 'Sidebar first'
   footer: 'Footer'
 
