@@ -72,36 +72,35 @@
  * @ingroup themeable
  */
 #}
-
-{% set classes = ['event-full'] %}
-{% set titleClasses = ['event-full__title'] %}
-{% set contentClasses = ['event-full__content'] %}
+{% set classes = ['article-full']%}
+{% set titleClasses = ['article-full__title']%}
+{% set contentClasses = ['article-full__content']%}
 
 <article {{ attributes.addClass(classes) }}>
-  <div class="event-full__cover">
-    {{ content.field_cover }}
-
-    <div class="event-full__date">
-      <div class="event-full__date__month">
-        {{ node.getCreatedTime|date('M') }}
-      </div>
-      <div class="event-full__date__day-year">
-        {{ node.getCreatedTime|date('d, Y') }}
-      </div>
-    </div>
+  <div class="article-full__image">
+    {{ content.field_image}}
   </div>
 
-  <div class="event-full__container">
+  <div class="article-full__container">
     <h2 {{ title_attributes.addClass(titleClasses) }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-    <div {{ content_attributes.addClass(contentClasses) }}>
-      {{ content|without('field_cover')|without('field_profile') }}
-    </div>
-  </div>
 
-  <div class="field-profile--compact">
-    {{ content.field_profile }}
+    <div class="article-full__date">
+      {{ node.getCreatedTime|date('M d, Y') }}
+    </div>
+
+    <div {{ content_attributes.addClass(contentClasses) }}>
+      {{ content|without('field_image')|without('field_author_profile')|without('field_tags') }}
+    </div>
+
+    <div class="article-full__tags">
+      <i class="fas fa-bookmark article-full__tags__icon"></i>
+      {{ content.field_tags }}
+    </div>
+    <div class="field-profile--compact">
+      {{ content.field_author_profile }}
+    </div>
   </div>
 
 

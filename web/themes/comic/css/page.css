@@ -32,8 +32,8 @@
   outline: 2px dashed red;
 }
 
-.page-node__content {
-  outline: 2px dotted blue;
+.page-node__content, .page-node__footer-content {
+  /*outline: 2px dotted blue;*/
   width: var(--large);
   margin: 0 auto;
   padding-bottom: 3rem;

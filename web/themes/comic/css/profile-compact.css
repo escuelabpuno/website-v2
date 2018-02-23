@@ -46,6 +46,17 @@
 }
 
 .profile-compact__summary {
-  color: var(--black-600);
+  color: var(--black-400);
   text-align: left;
+  font-family: var(--third-font-family);
+  font-size: .9rem;
+  line-height: 1.75;
+}
+
+
+/* Field profile */
+.field-profile--compact {
+  padding: 3rem 3.4rem;
+  border-top: 1px dashed var(--black-300);
+  border-bottom: 1px dashed var(--black-300);
 }

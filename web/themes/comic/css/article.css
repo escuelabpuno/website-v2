@@ -20,6 +20,7 @@
 }
 
 .article-block__date {
+  color: var(--green);
   padding-top: 290px;
   font-size: .95rem;
 }
