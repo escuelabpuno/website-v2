@@ -1,0 +1,30 @@
+.block-facebook {
+  width: 970px;
+  margin: 0 auto;
+}
+
+.block-facebook__title {
+  text-align: center;
+  position: relative;
+}
+
+.block-facebook__title::before {
+  content: '';
+  border-bottom: 8px solid var(--black-200);
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+
+.block-facebook__title--padding {
+  color: var(--black-600);
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  padding: 0 3rem;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  text-transform: uppercase;
+  top: -2px;
+}
