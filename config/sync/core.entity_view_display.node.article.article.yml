@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_author_profile
     - field.field.node.article.field_image
-    - field.field.node.article.field_tags
     - field.field.node.article.field_social_media
     - image.style.article_image
     - node.type.article
@@ -39,6 +38,5 @@ content:
 hidden:
   body: true
   comment: true
-  field_tags: true
   field_author_profile: true
   field_social_media: true

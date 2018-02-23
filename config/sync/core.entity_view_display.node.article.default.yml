@@ -7,8 +7,8 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_author_profile
     - field.field.node.article.field_image
-    - field.field.node.article.field_tags
     - field.field.node.article.field_social_media
+    - field.field.node.article.field_tags
     - image.style.full_event_cover
     - node.type.article
   module:
@@ -48,20 +48,21 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 4
-    region: content
-    label: hidden
-    settings:
-      link: true
   field_social_media:
-    weight: 6
-    label: above
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: social_media_default
     region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   links:
     weight: 3
     region: content
