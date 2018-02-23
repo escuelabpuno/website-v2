@@ -6,8 +6,10 @@ dependencies:
     - core.entity_view_mode.node.mini_teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_author_profile
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_social_media
     - image.style.mini_teaser_80x75_
     - node.type.article
   module:
@@ -38,3 +40,5 @@ hidden:
   body: true
   comment: true
   field_tags: true
+  field_author_profile: true
+  field_social_media: true

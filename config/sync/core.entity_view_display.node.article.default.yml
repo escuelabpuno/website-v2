@@ -8,10 +8,12 @@ dependencies:
     - field.field.node.article.field_author_profile
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_social_media
     - image.style.full_event_cover
     - node.type.article
   module:
     - image
+    - social_media
     - text
     - user
 _core:
@@ -53,7 +55,13 @@ content:
     label: hidden
     settings:
       link: true
+  field_social_media:
+    weight: 6
+    label: above
+    settings: {  }
     third_party_settings: {  }
+    type: social_media_default
+    region: content
   links:
     weight: 3
     region: content

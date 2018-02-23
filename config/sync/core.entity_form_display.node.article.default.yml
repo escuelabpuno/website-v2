@@ -8,12 +8,14 @@ dependencies:
     - field.field.node.article.field_author_profile
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_social_media
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
     - image
     - path
+    - social_media
     - text
 _core:
   default_config_hash: buc38w3gxCqFnjINJhMiJvPpj9jWflKvlKDyBVMPVvw
@@ -65,7 +67,13 @@ content:
     weight: 3
     region: content
     settings: {  }
+  field_social_media:
+    weight: 123
+    settings:
+      display_label: true
     third_party_settings: {  }
+    type: social_media_default
+    region: content
   path:
     type: path
     weight: 30
