@@ -11,4 +11,4 @@ deploy:
 	ENV=production ./scripts/deploy.sh
 
 update:
-	docker exec -it $(shell docker-compose ps | grep php | cut -d" " -f 1) /bin/sh -c "scripts/update.sh"
+	docker exec -t $(shell docker-compose ps | grep php | cut -d" " -f 1) /bin/sh -c "scripts/update.sh"
