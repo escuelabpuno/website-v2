@@ -14,5 +14,5 @@ if [[ $ENV == 'production' ]]; then
     . ${USER}@${SERVER}:~/${DIRECTORY}/
 
   ssh -o StrictHostKeyChecking=no ${USER}@${SERVER} \
-    'cd ./${DIRECTORY}; ENV=production make update'
+    "cd ./${DIRECTORY}; ENV=production make update"
 fi
