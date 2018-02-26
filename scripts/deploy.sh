@@ -12,6 +12,6 @@ if [[ $ENV == 'production' ]]; then
     --delete --progress \
     . ${USER}@${SERVER}:~/${DIRECTORY}/
 
-  # ssh -o StrictHostKeyChecking=no ${USER}@${SERVER} \
-  #   'cd ./${DIRECTORY}; ENV=prod /bin/sh -c "scripts/update.sh"'
+  ssh -o StrictHostKeyChecking=no ${USER}@${SERVER} \
+    'cd ./${DIRECTORY}; ENV=production make update'
 fi
