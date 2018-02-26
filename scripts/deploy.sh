@@ -9,6 +9,7 @@ if [[ $ENV == 'production' ]]; then
   rsync -avzhe "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" \
     --exclude-from "${PWD}/scripts/excludes.txt" \
     --exclude 'settings.local.php' \
+    --exclude 'settings.php' \
     --delete --progress \
     . ${USER}@${SERVER}:~/${DIRECTORY}/
 
