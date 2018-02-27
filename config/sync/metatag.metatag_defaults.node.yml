@@ -15,3 +15,7 @@ tags:
   og_url: '[node:url]'
   og_image_url: '[node:field_image]'
   og_type: '[node:content-type]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_type: summary_large_image
+  twitter_cards_title: '[node:title]'
+  twitter_cards_image: '[node:field_image]'
