@@ -9,3 +9,4 @@ label: Global
 tags:
   canonical_url: '[current-page:url]'
   title: '[current-page:title] | [site:name]'
+  fb_app_id: '419023901881637'
