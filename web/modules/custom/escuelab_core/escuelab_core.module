@@ -33,3 +33,15 @@ function escuelab_core_form_alter(&$form, &$form_state, $form_id) {
     $form['field_profile']['#group'] = 'author';
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function escuelab_core_theme() {
+  return [
+   'social_links_block' => [
+      'variables' => ['facebook_link' => NULL, 'twitter_link' => NULL, 'youtube_link' => NULL],
+      'template' => 'block--social-links',
+    ],
+  ];
+}
