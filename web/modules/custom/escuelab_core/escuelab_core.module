@@ -39,9 +39,11 @@ function escuelab_core_form_alter(&$form, &$form_state, $form_id) {
  */
 function escuelab_core_theme() {
   return [
-   'social_links_block' => [
-      'variables' => ['facebook_link' => NULL, 'twitter_link' => NULL, 'youtube_link' => NULL],
+    'social_links_block' => [
       'template' => 'block--social-links',
-    ],
+      'variables' => [
+        'data' => []
+      ]
+    ]
   ];
 }

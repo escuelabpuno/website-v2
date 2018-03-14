@@ -73,15 +73,13 @@ class SocialLinksBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    $build = [];
-    $build['social_links_block_facebook_link']['#markup'] = '<p>' . $this->configuration['facebook_link'] . '</p>';
-    $build['social_links_block_twitter_link']['#markup'] = '<p>' . $this->configuration['twitter_link'] . '</p>';
-    $build['social_links_block_youtube_link']['#markup'] = '<p>' . $this->configuration['youtube_link'] . '</p>';
-
     return [
-      '#facebook_link' => $this->configuration['facebook_link'],
-      '#twitter_link' => $this->configuration['twitter_link'],
-      '#youtube_link' => $this->configuration['youtube_link'],
+      '#theme' => 'social_links_block',
+      '#data' => [
+        'facebook_link' => $this->configuration['facebook_link'],
+        'twitter_link' => $this->configuration['twitter_link'],
+        'youtube_link' => $this->configuration['youtube_link']
+      ]
     ];
   }
 
