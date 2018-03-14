@@ -4,9 +4,13 @@
  * Profile ws custom block.
  *
  * Available variables:
- * - data: The data have an array of social links.
+ * - data: The data has an array of social links.
   */
 #}
- <div class="col-sm-3 ws-custom--block">
-    <a href="{{ link }}">{{ title }}</a>
- </div>
+<div class="social-links">
+  {% for item in data %}
+    <div class="social-link social-link--{{item.id}}">
+      <a href="{{ item.link }}"><i class="fab {{ item.icon }}"></i>{{ item.name }}</a>
+    </div>
+  {% endfor %}
+</div>

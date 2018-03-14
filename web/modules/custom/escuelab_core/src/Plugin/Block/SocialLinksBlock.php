@@ -76,9 +76,26 @@ class SocialLinksBlock extends BlockBase {
     return [
       '#theme' => 'social_links_block',
       '#data' => [
-        'facebook_link' => $this->configuration['facebook_link'],
-        'twitter_link' => $this->configuration['twitter_link'],
-        'youtube_link' => $this->configuration['youtube_link']
+        [
+          'id' => 'facebook',
+          'name' => 'Facebook',
+          'link' => $this->configuration['facebook_link'],
+          'icon' => 'fa-facebook-f'
+        ],
+
+        [
+          'id' => 'twitter',
+          'name' => 'Twitter',
+          'link' => $this->configuration['twitter_link'],
+          'icon' => 'fa-twitter'
+        ],
+
+        [
+          'id' => 'you_tube',
+          'name' => 'YouTube',
+          'link' => $this->configuration['youtube_link'],
+          'icon' => 'fa-youtube'
+        ]
       ]
     ];
   }

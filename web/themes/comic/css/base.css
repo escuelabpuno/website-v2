@@ -20,6 +20,7 @@
 @import './views/article-list.css';
 
 @import './blocks/facebook-comments.css';
+@import './blocks/social-links.css';
 
 body {
   margin: 0;
