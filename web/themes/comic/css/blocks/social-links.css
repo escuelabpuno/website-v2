@@ -1,18 +1,14 @@
 .social-links {
-  /* outline: 2px solid red; */
   display: flex;
   align-content: flex-end;
   justify-content: flex-end;
-  padding: 2rem 0;
 }
 
 .social-link {
-  /* outline: 2px dashed green; */
   margin: 0 2rem;
 }
 
 .social-link a {
-  outline: 2ps solid blue;
   font-family: var(--main-font-family);
   font-size: .85rem;
   font-weight: 600;
@@ -20,7 +16,6 @@
 }
 
 .social-link svg {
-  /* outline: 2px solid red; */
   padding-right: .7rem;
 }
 
