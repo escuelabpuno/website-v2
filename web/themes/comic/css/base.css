@@ -21,6 +21,9 @@
 
 @import './blocks/facebook-comments.css';
 @import './blocks/social-links.css';
+@import './blocks/system-powered-by.css';
+
+@import './regions/footer.css';
 
 body {
   margin: 0;

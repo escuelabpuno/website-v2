@@ -1,0 +1,13 @@
+/*
+ * Main footer styles.
+ */
+.main-footer {
+}
+
+.main-footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  width: var(--large);
+  margin: 0 auto;
+}
