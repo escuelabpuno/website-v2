@@ -1,0 +1,20 @@
+uuid: 837a2a1e-39e7-462f-a0b3-aa2b3606146e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - comic
+id: poweredbydrupal
+theme: comic
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

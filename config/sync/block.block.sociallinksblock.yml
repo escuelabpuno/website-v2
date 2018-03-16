@@ -1,0 +1,23 @@
+uuid: fe73c402-7244-406d-b022-18d76af5a5fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - escuelab_core
+  theme:
+    - comic
+id: sociallinksblock
+theme: comic
+region: footer
+weight: 0
+provider: null
+plugin: social_links_block
+settings:
+  id: social_links_block
+  label: 'Social links block'
+  provider: escuelab_core
+  label_display: '0'
+  facebook_link: 'https://hechoendrupal.gitbooks.io/drupal-console/content/en/index.html'
+  twitter_link: 'https://hechoendrupal.gitbooks.io/drupal-console/content.html'
+  youtube_link: 'https://hechoendrupal.gitbooks.io/drupal-console/content/en.html'
+visibility: {  }
